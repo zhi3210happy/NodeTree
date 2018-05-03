@@ -26,7 +26,7 @@ export default {
   },
   subscriptions() {
     return{
-       inputObserve$:this.$watchAsObservable('filterText').debounceTime(200).pluck('newValue').map(v=>v)
+       inputObserve$:this.$watchAsObservable('filterText').debounceTime(200).pluck('newValue')
     }
   },
   data() {
